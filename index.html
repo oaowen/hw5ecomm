@@ -20,7 +20,13 @@ document.getElementById("func1").innerHTML = myPair.PairName();
  
   </script>
   
- <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
 
 <p id="demo"></p>
 </body>

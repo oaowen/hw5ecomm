@@ -3,30 +3,21 @@
 <body>
 
 <h2>HW 5: JavaScript Fucntions</h2>
-<p>This example calls the fullName method of person, using it on person1:
+<p>First function returns dogs and owners
 </p>
-
 <p id="func1"></p>
 
 <script>
-const person = {
-  fullName: function(city, country) {
-    return this.firstName + " " + this.lastName + "," + city + "," + country;
+const myPair = {
+  firstName:"Olivia",
+  DogName: "Tanner",
+  PairName: function() {
+    return this.firstName + " & " + this.DogName;
   }
 }
-
-const person1 = {
-  firstName:"John",
-  lastName: "Doe"
-}
-
-const person2 = {
-  firstName:"Mary",
-  lastName: "Doe"
-}
-
-document.getElementById("func1").innerHTML = person.fullName.call(person1, "Oslo", "Norway"); 
+document.getElementById("func1").innerHTML = myObject.PairName();
 </script>
+  
 
 </body>
 </html>

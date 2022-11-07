@@ -34,6 +34,11 @@ document.getElementById("func1").innerHTML = myPair.PairName();
         document.getElementById('placeholder').innerHTML = 'Surpise you wasted a second of your life';
       }
     </script>
+    
+    $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
   </body>
 </html>
 

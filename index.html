@@ -10,20 +10,31 @@
     <h2>HW 5: JavaScript Fucntions</h2>
   <p>First function returns owners and their dogs name
   </p>
-  <p id="func1"></p>
-
-<script>
-const myPair = {
-  firstName:"Olivia",
-  DogName: "Tanner",
-  PairName: function() {
-    return this.firstName + " & " + this.DogName;
-  }
+  <script>
+function getCellContent(id) {
+  var x = document.getElementById(id).rows[0].cells;
+  document.getElementById("demo").innerHTML = x[0].innerHTML;
 }
-document.getElementById("func1").innerHTML = myPair.PairName();
- 
- 
-  </script>
+</script>
+</head>
+<body>
+
+<table id="myTable" style="border: 1px solid black">
+  <tr>
+    <td>Olivia and Tanner</td>
+    <td>Russ and Teddy</td>
+  </tr>
+  <tr>
+    <td>Duke and Zoe</td>
+    <td>Conner and Stella</td>
+  </tr>
+</table>
+
+<p>
+<input type="button" onclick="getCellContent('myTable')" value="Display first cell">
+</p>
+
+<p id="demo"></p>
     <div class="container">
       <p id="placeholder"></p>
       <button class="btn" onclick='writeValue()'>Click me</button>
